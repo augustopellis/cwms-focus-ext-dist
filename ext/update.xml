@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CWMS Focus Companion - self-hosted Chrome/Edge update manifest.
+     Extension ID: ahoblaffehjlaokdkmiklmhlpipgbble
+     On each release: bump version here AND replace cwms-focus-companion.crx. -->
+<gupdate xmlns="http://www.google.com/update2/response" protocol="2.0">
+  <app appid="ahoblaffehjlaokdkmiklmhlpipgbble">
+    <updatecheck
+      codebase="https://augustopellis.github.io/cwms-focus-ext-dist/ext/cwms-focus-companion.crx"
+      version="1.1.0" />
+  </app>
+</gupdate>
