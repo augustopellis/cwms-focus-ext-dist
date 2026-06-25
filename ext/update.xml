@@ -6,6 +6,6 @@
   <app appid="ahoblaffehjlaokdkmiklmhlpipgbble">
     <updatecheck
       codebase="https://augustopellis.github.io/cwms-focus-ext-dist/ext/cwms-focus-companion.crx"
-      version="1.2.0" />
+      version="1.2.1" />
   </app>
 </gupdate>
