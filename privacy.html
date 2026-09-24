@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CWMS Focus Companion — Privacy Policy</title>
+  <style>
+    :root { --navy:#001058; --orange:#F68401; --ink:#1e2430; --muted:#556; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+           color:var(--ink); line-height:1.6; background:#f7f8fa; }
+    .wrap { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+    header { border-bottom:4px solid var(--orange); padding-bottom:16px; margin-bottom:8px; }
+    h1 { color:var(--navy); font-size:1.6rem; margin:0 0 4px; }
+    h2 { color:var(--navy); font-size:1.15rem; margin:28px 0 6px; }
+    .updated { color:var(--muted); font-size:.9rem; }
+    p, li { font-size:1rem; }
+    ul { padding-left:1.2rem; }
+    code { background:#eef; padding:1px 5px; border-radius:4px; font-size:.92em; }
+    footer { margin-top:36px; padding-top:16px; border-top:1px solid #dde; color:var(--muted); font-size:.9rem; }
+    a { color:var(--navy); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>CWMS Focus Companion — Privacy Policy</h1>
+      <div class="updated">Last updated: 24 September 2026</div>
+    </header>
+
+    <p>CWMS Focus Companion is an internal browser extension used by staff alongside the
+       CWMS Web Portal (a private time-tracking application). This policy explains what the
+       extension accesses and, more importantly, what it does <strong>not</strong> do.</p>
+
+    <h2>What the extension accesses</h2>
+    <p>The extension uses Chrome's <code>idle</code> API to read whether the computer is
+       <em>active</em> or <em>idle</em> at the operating-system level (i.e. whether the keyboard
+       and mouse have been used recently). It does not read what you type, which applications you
+       run, your screen contents, your browsing history, or the content of any web page.</p>
+
+    <h2>How that information is used</h2>
+    <p>The active/idle signal is passed only to the CWMS Web Portal page open in your browser,
+       using an in-browser message (<code>postMessage</code>). The portal uses it so its
+       "are you still working?" inactivity prompt is not shown while you are genuinely working in
+       another program, and the extension brings the CWMS tab to the front when that prompt does
+       appear. The signal is used in the moment and is not retained by the extension.</p>
+
+    <h2>What we do NOT do</h2>
+    <ul>
+      <li>We do <strong>not</strong> collect, store, or log any personal information.</li>
+      <li>We do <strong>not</strong> transmit any data to the extension's authors or to any
+          third party or external server.</li>
+      <li>We do <strong>not</strong> use any analytics, advertising, or tracking.</li>
+      <li>We do <strong>not</strong> sell or share any data. There is no data to sell.</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><code>idle</code> — to detect OS-level active/idle state, as described above.</li>
+      <li>Access to the CWMS Web Portal pages only — so the extension can relay the signal to
+          the portal and focus its tab. It runs on no other websites.</li>
+    </ul>
+
+    <h2>Data retention</h2>
+    <p>None. The extension keeps no records.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If the extension's behaviour changes, this page will be updated and the date above revised.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this extension can be raised with your CWMS administrator, or via the
+       project repository at
+       <a href="https://github.com/augustopellis/CWMS-Web">github.com/augustopellis/CWMS-Web</a>.</p>
+
+    <footer>CWMS Focus Companion is a private, internal tool and is not affiliated with Google or Microsoft.</footer>
+  </div>
+</body>
+</html>
